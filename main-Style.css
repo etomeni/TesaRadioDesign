@@ -1,0 +1,164 @@
+body, html{ width:100%; height:100vh; padding: 0; margin: 0;}
+
+#play-radio {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0.75)
+        ),
+        url("assets/images/radiomic.png");
+    /* background-color: green; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container2 {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+.tesacolor {
+    border: 35px solid #de2341;
+    border-radius: 100%;
+}
+
+.transparent {
+    border: 35px solid transparent;
+    border-radius: 100%;
+}
+
+.whitecolor {
+    border: 15px solid #FFF;
+    border-radius: 100%;
+}
+
+.radio-BTN {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+.playing {
+    background: transparent;
+    width: 6rem;
+    height: 4rem;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* padding: .5rem; */
+    box-sizing: border-box;
+}
+  
+.playing__bar {
+    display: inline-block;
+    background: #de2341;
+    width: 30%;
+    height: 100%;
+    animation: up-and-down 1.3s ease infinite alternate;
+}
+
+.playing__bar1 {
+    height: 60%;
+}
+
+.playing__bar2 {
+    height: 30%;
+    animation-delay: -2.2s;
+}
+
+.playing__bar3 {
+    height: 75%;
+    animation-delay: -3.7s;
+}
+
+@keyframes up-and-down {
+    10% {
+        height: 30%;
+    }
+
+    30% {
+        height: 100%;
+    }
+
+    60% {
+        height: 50%;
+    }
+
+    80% {
+        height: 75%;
+    }
+
+    100% {
+        height: 60%;
+    }
+}
+
+
+
+
+
+
+
+#scroll-text {
+    text-align: right;
+
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+    from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    }
+    to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    }
+}
